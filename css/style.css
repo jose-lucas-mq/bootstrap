@@ -52,3 +52,52 @@ header, .navbar{
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem .8rem;
 }
+
+/* SLIDER */
+
+.container-fluid{
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.main-btn{
+    background-color: #1acff8;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3x solid transparent;
+    transition: .5ms;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #1acff8;
+}
+
+.carousel-indicators .active{
+    background-color: #1acff8;
+}
