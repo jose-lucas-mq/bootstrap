@@ -1,0 +1,107 @@
+$(document).ready(function () {
+
+    // Progress Bar
+    let containerA = document.getElementById('circleA');
+
+    let circleA = new ProgressBar.Circle(containerA, {
+        color: '#1acff8',
+        strokeWidth: 8,
+        duration: 1400,
+        from: { color: '#AAA' },
+        to: { color: '#1acff8' },
+
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+
+            let value = Math.round(circle.value() * 60);
+
+            circle.setText(value);
+
+
+        }
+    });
+
+    let containerB = document.getElementById('circleB');
+
+    let circleB = new ProgressBar.Circle(containerB, {
+        color: '#1acff8',
+        strokeWidth: 8,
+        duration: 1600,
+        from: { color: '#AAA' },
+        to: { color: '#1acff8' },
+
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+
+            let value = Math.round(circle.value() * 254);
+
+            circle.setText(value);
+
+
+        }
+    });
+
+    let containerC = document.getElementById('circleC');
+
+    let circleC = new ProgressBar.Circle(containerC, {
+        color: '#1acff8',
+        strokeWidth: 8,
+        duration: 1000,
+        from: { color: '#AAA' },
+        to: { color: '#1acff8' },
+
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+
+            let value = Math.round(circle.value() * 32);
+
+            circle.setText(value);
+
+
+        }
+    });
+
+    let containerD = document.getElementById('circleD');
+
+    let circleD = new ProgressBar.Circle(containerD, {
+        color: '#1acff8',
+        strokeWidth: 8,
+        duration: 1800,
+        from: { color: '#AAA' },
+        to: { color: '#1acff8' },
+
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+
+            let value = Math.round(circle.value() * 7804);
+
+            circle.setText(value);
+
+
+        }
+    });
+
+    // Iniciando o loader quando o usuário chegar na função
+
+    let dataAreaOffSet = $('#data-area').offset();
+    let stop = 0;
+
+    $(window).scroll(function (e) {
+        let scroll = $(window).scrollTop();
+
+        if (scroll > (dataAreaOffSet.top - 500) && stop == 0) {
+            circleA.animate(1.0);
+            circleB.animate(1.0);
+            circleC.animate(1.0);
+            circleD.animate(1.0);
+
+            stop = 1;
+        }
+    });
+
+    // Parallax
+    setTimeout(function(){
+        $('#data-area').parallax({imageSrc: './img/cidadeparallax.png'});
+    }, 250);
+
+});
