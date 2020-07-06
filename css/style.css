@@ -1,0 +1,54 @@
+/* GERAIS */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    color: #444;
+    font-size: 14px;
+}
+
+/* NAVBAR */
+header, .navbar{
+    background-color: #353d41;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 75px;
+}
+
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover{
+    color: #fff
+}
+
+#navbar-links a{
+    color: #fff;
+}
+
+#navbar-links a:hover{
+    color: #1acff8;
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
