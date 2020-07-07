@@ -244,3 +244,35 @@ header, .navbar{
     border-color: #1acff8;
     background-color: #1acff8;
 }
+
+/* PORTFOLIO */
+
+.project-box{
+    margin-bottom: 30px;
+}
+
+#filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn{
+    color: #444;
+    border: 1px #444 solid;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    transition: .5s;
+    outline: none;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+    color: #fff;
+    background-color: #1acff8;
+    border-color: #1acff8;
+}
