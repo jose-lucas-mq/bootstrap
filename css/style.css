@@ -516,3 +516,97 @@ header, .navbar{
     }
 
 }
+
+
+@media(max-width: 425px){
+    /* SLIDER */
+
+    #mainSlider{
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption{
+        top: 5%;
+    }
+    #mainSlider .carousel-caption h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p{
+        display: none;
+    }
+
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+
+    /* ABOUT */
+
+    .main-title{
+        font-size: 30px;
+    }
+
+    #about-area img{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* DATA */
+    .circle-box{
+        width: 50%;
+    }
+
+    /* TEAM */
+    #team-area .col-md-3{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* APPLY */
+    #apply-area{
+        height: auto;
+    }
+
+    #company-img{
+        display: none;
+    }
+
+    /* FILTER */
+
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+    }
+
+    .project-box{
+        width: 50%;
+    }
+
+    /* NEWS */
+    #news-area .main-title{
+        font-size: 24px;
+    }
+
+    #news-area p{
+        font-size: 16px;
+    }
+
+    #email-input{
+        width: 80%;
+    }
+
+    /* CALL TO ACTION */
+    #call-area p, #call-area #call-btn{
+        font-size: 13px;
+        letter-spacing: 0;
+        margin: 0;
+        width: 55%;
+    }
+
+    /* CONTACT */
+    .contact-box{
+        border: none;
+    }
+
+}
